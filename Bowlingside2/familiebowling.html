@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spis og Bowl - Aarhus Bowlinghal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Sidebar-->
+<aside class="burger-sidebar">
+    <div class="sidebar-content">
+        <div class="sidebar-header">
+            <img width="15" src="img/svg/close-1.svg" onclick="closeSidebar()">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="/vendom.html">Bowlingaktiviteter</a></li>
+                <li><a href="/familiebowling.html">Familiebowling</a></li>
+                <li><a href="/spisogbowl.html">Spis & Bowl</a></li>
+                <li><a href="/vendom.html">Events</a></li>
+                <li><a href="/vendom.html">Praktisk information</a></li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!--Slut Sidebar-->
+
+<!-- Header -->
+<header class="header">
+
+    <div class="header-items">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="img/bowlinglogo.png" alt="Logo">
+        </a>
+
+        <!-- Burger -->
+        <div class="burger-menu" onclick="openSidebar()">
+            <img width="35" src="img/svg/list.svg" alt=""></img>
+        </div>
+    
+        <!-- Links -->
+        <nav class="nav">
+            <ul>
+                <div class="dropdown">
+                    <li class="dropdown-btn"><a href="/vendom.html">Bowlingaktiviteter<img src="./img/svg/chevron-down.svg" class="icon"></a></li>
+                    <div class="dropdown-content">
+                        <a href="/vendom.html">Standard bowling</a>
+                        <a href="/vendom.html">Powerbowling</a>
+                        <a href="/vendom.html">Seniorbowling</a>
+                        <a href="/vendom.html">Klubbowling</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li class="dropdown-btn"><a href="/familiebowling.html">Familiebowling<img src="./img/svg/chevron-down.svg" class="icon"></a></li>
+                    <div class="dropdown-content">
+                        <a href="/vendom.html">Børnefødselsdag</a>
+                    </div>
+                </div>
+                <li><a href="/spisogbowl.html">Spis & Bowl</a></li>
+                <li><a href="/vendom.html">Events</a></li>
+                <div class="dropdown">
+                    <li class="dropdown-btn"><a href="/vendom.html">Praktisk information<img src="./img/svg/chevron-down.svg" class="icon"></a></li>
+                    <div class="dropdown-content">
+                        <a href="/vendom.html">Priser & Tider</a>
+                        <a href="/vendom.html">Om Os</a>
+                        <a href="/vendom.html">Parkering</a>
+                        <a href="/vendom.html">Kontakt</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Knap -->
+       
+            <a class="header-button-link" href="/vendom.html"><button class="header-button">Book</button></a>
+      
+    </div>
+</header>
+<!-- Slut Header -->
+
+
+<!--HERO2-->
+<main class="hero2">
+    <div class="hero2-content">
+        <h1>Familiebowling<h1>
+        <a href="index.html"><button>Book her</button></a>
+    </div>
+    
+    <div class="hero2-overlay"></div>
+    <img class="hero2-img" src="/img/familiebowling.png">
+    
+    <!-- curve at bottom -->
+    <svg class="hero2-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M 0,0 C 25,50 75,50 100,0 L 100,100 L 0,100 Z" />
+    </svg>
+</main>
+<!--Slut HERO2-->
+
+<section class="info-rows section2">
+    <div class="container">
+        <!-- Row 1 -->
+        <article class="info-row">
+            <div class="info-row-image">
+                <img src="img/familiebowling.png" alt="Description of image 1">
+            </div>
+            <div class="info-row-content">
+                <h2>First Row Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </article>
+
+        <!-- Row 2 -->
+        <article class="info-row-reverse">
+            <div class="info-row-image">
+                <img src="img/bowling-people-2.png" alt="Description of image 2">
+            </div>
+            <div class="info-row-content">
+                <h2>Second Row Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </article>
+
+        <!-- Row 3 -->
+        <article class="info-row">
+            <div class="info-row-image">
+                <img src="img/bowling-1.png" alt="Description of image 3">
+            </div>
+            <div class="info-row-content">
+                <h2>Third Row Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Overlay -->
+<div id="bg-overlay"></div>
+
+<script type="text/javascript" src="burger.js"></script>
+</body>
+</html>

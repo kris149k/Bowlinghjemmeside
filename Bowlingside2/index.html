@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarhus Bowling</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Sidebar-->
+    <aside class="burger-sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <img width="15" src="img/svg/close-1.svg" onclick="closeSidebar()">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/vendom.html">Bowlingaktiviteter</a></li>
+                    <li><a href="/familiebowling.html">Familiebowling</a></li>
+                    <li><a href="/spisogbowl.html">Spis & Bowl</a></li>
+                    <li><a href="/vendom.html">Events</a></li>
+                    <li><a href="/vendom.html">Praktisk information</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+<!--Slut Sidebar-->
+
+<!-- Header -->
+    <header class="header">
+
+        <div class="header-items">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/bowlinglogo.png" alt="Logo">
+            </a>
+
+            <!-- Burger -->
+            <div class="burger-menu" onclick="openSidebar()">
+                <img width="35" src="img/svg/list.svg" alt=""></img>
+            </div>
+        
+            <!-- Links -->
+            <nav class="nav">
+                <ul>
+                    <div class="dropdown">
+                        <li class="dropdown-btn"><a href="/vendom.html">Bowlingaktiviteter<img src="./img/svg/chevron-down.svg" class="icon"></a></li>
+                        <div class="dropdown-content">
+                            <a href="/vendom.html">Standard bowling</a>
+                            <a href="/vendom.html">Powerbowling</a>
+                            <a href="/vendom.html">Seniorbowling</a>
+                            <a href="/vendom.html">Klubbowling</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li class="dropdown-btn"><a href="/familiebowling.html">Familiebowling<img src="./img/svg/chevron-down.svg" class="icon"></a></li>
+                        <div class="dropdown-content">
+                            <a href="/vendom.html">Børnefødselsdag</a>
+                        </div>
+                    </div>
+                    <li><a href="/spisogbowl.html">Spis & Bowl</a></li>
+                    <li><a href="/vendom.html">Events</a></li>
+                    <div class="dropdown">
+                        <li class="dropdown-btn"><a href="/vendom.html">Praktisk information<img src="./img/svg/chevron-down.svg" class="icon"></a></li>
+                        <div class="dropdown-content">
+                            <a href="/vendom.html">Priser & Tider</a>
+                            <a href="/vendom.html">Om Os</a>
+                            <a href="/vendom.html">Parkering</a>
+                            <a href="/vendom.html">Kontakt</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Knap -->
+           
+                <a class="header-button-link" href="/vendom.html"><button class="header-button">Book</button></a>
+          
+        </div>
+    </header>
+<!-- Slut Header -->
+
+<!-- Hero Main -->
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Aarhus Bowlinghal</h1>
+            <p class="only-mobile">Byens hyggeligste bowlinghal, placeret i centrum af Aarhus</p>
+            <p class="only-desktop">
+                Byens hyggeligste bowlinghal, placeret i centrum af Aarhus,
+                med har 16 bowlingbaner og mulighed for at kombinere bowling med spisning.
+                Vi glæder os til at byde jer velkommen.
+            </p>
+            <a href="/vendom.html"><button>Book Her</button></a>
+        </div>
+        <div class="hero-background-overlay"></div>
+        <img class="hero-background-img" src="img/bowling-1.png" alt="">
+        <video 
+            class="hero-background-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            poster="your-poster-image.jpg">
+            <source src="img/aarhusbowlinghal-hero-video2.mp4" type="video/mp4">
+        </video>
+
+        <svg class="hero-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 0,0 C 25,75 75,75 100,0 L 100,100 L 0,100 Z" />
+        </svg>
+    </main>
+<!-- Slut Hero -->
+<!-- Section 2 -->
+    <section class="section2">
+        <div class="section2-wrapper">
+            <div class="section2-text">
+                <h2>Byens Hyggeligste Bowlinghal</h2>
+                <p>
+                    En sjov og social aktivitet for alle! Oplev den livlige atmosfære hos Aarhus Bowlinghal med venner og familie.
+                </p>
+                <p class="only-desktop">Vi har 16 bowlingbaner og mulighed for at kombinere bowling med spisning.</p>
+            </div>
+            <div class="section2-container">
+                <div class="section2-container-left">
+                    <img src="img/bowling-people-2.png" alt="">
+                </div>
+                <div class="section2-container-right">
+                    <img src="img/bowling-people-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Slut Section 2 -->
+
+<!-- Section 3 -->
+    <section class="section3">
+            <div class="max-width-div">
+                <h2>Bowlingaktiviteter</h2>
+                <div class="section3-scroller">
+                    <div class="section3-grid">
+
+                            <div class="item-standard">
+                                <h3 class="section3-item-text">Standard Bowling</h3>
+                                <div class="section3-item-overlay"></div>
+                                <img class="section3-item-image" src="img/bowling-1.png" alt="">
+                            </div>
+                        
+                        <div class="item-familie">
+                            <h3 class="section3-item-text">Familiebowling</h3>
+                            <div class="section3-item-overlay"></div>
+                            <img class="section3-item-image" src="img/familiebowling.png" alt="">
+                        </div>
+                        <div class="item-power">
+                            <h3 class="section3-item-text">Powerbowling</h3>
+                            <div class="section3-item-overlay"></div>
+                            <img class="section3-item-image" src="img/powerbowling.png" alt="">
+                        </div>
+                        <div class="item-senior">
+                            <h3 class="section3-item-text">SeniorBowling</h3>
+                            <div class="section3-item-overlay"></div>
+                            <img class="section3-item-image" src="img/bowling-1.png" alt="">
+                        </div>
+                        <div class="item-turnering">
+                            <h3 class="section3-item-text">Halturnering</h3>
+                            <div class="section3-item-overlay"></div>
+                            <img class="section3-item-image" src="img/bowling-1.png" alt="">
+                        </div>
+                        <div class="item-klub">
+                            <h3 class="section3-item-text">Klubbowling</h3>
+                            <div class="section3-item-overlay"></div>
+                            <img class="section3-item-image" src="img/bowling-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section3-buttons">
+                    <img class="back-btn" src="./img/svg/arrow-l.svg"></img>
+                    <img class="next-btn" src="./img/svg/arrow-l.svg"></img>
+                </div>
+                <a href="index.html" class="section3-readmore"><strong>Se alle→</strong></a>
+            </div>
+    </section>
+<!-- Section 3 -->
+
+<!--Section 4-->
+    <section class="section4">
+        <div class="section4-wrapper">
+            <div class="section4-text">
+                <h2>Spis & Bowl</h2>
+                <p>
+                    Hos århus Bowlinghal har vi mange forskellige buffeter og friske kolde drikkevarer.
+                </p>
+                <a href="/spisogbowl.html">
+                    <button>Se Menu</button>
+                </a>
+            </div>
+
+            <div class="section4-img">
+                <img src="img/spisogbowl.png" alt="">
+            </div>
+        </div>
+    </section>
+<!--Slut Section 4-->
+
+<!-- Section 5 -->
+    <section class="section5">
+        <div class="section5-wrapper">
+            <div class="section5-text">
+                <h2>Her finder du os</h2>
+                <ul>
+                    <li>Eckersbergsgade 15</li>
+                    <li>8000 Aarhus C</li>
+                    <li>Tlf. 86125200</li>
+                    <li>mail@aarhusbowlinghal.dk</li>
+                </ul>
+                <p><strong>Gratis parkering</strong> — ved registrering af nummerplade på tablet i receptionen</p>
+            </div>
+            <div class="section5-map">
+                <iframe 
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Eckersbergsgade%2015,%208000%20Aarhus,%20Denmark+(Aarhus%20Bowlinghal)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+        </div>
+    </section>
+<!-- Slut section 5 -->
+
+<!-- Overlay -->
+<div id="bg-overlay"></div>
+
+<script type="text/javascript" src="burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root {
+    /* Layout */
+    --section-padding: 4rem 2rem;
+    --max-width: 1200px;
+    --breakpoint-mobile: 425px;
+    --breakpoint-tablet: 768px;
+    
+    /* Borders */
+    --border-main: 1rem;
+
+    /* Spacing */
+    --space-xs: 0.25rem;  /* 4px */
+    --space-sm: 0.5rem;   /* 8px */
+    --space-md: 1rem;     /* 16px */
+    --space-lg: 1.5rem;   /* 24px */
+    --space-xl: 2rem;     /* 32px */
+    --space-xxl: 4rem;    /* 64px */
+
+    /* Typography */
+    --font-family-base: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-family-heading: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+    --line-height-base: 1.5;
+    --line-height-heading: 1;
+    
+    /* Font Sizes - Mobile First */
+    --h1-size: 3rem;      /* 32px */
+    --h2-size: 1.75rem;   /* 28px */
+    --h3-size: 1.5rem;    /* 24px */
+    --h4-size: 1.25rem;   /* 20px */
+    --h5-size: 1.125rem;  /* 18px */
+    --h6-size: 1rem;      /* 16px */
+    --body-size: 1rem;    /* 16px */
+    
+    /* Colors */
+    --color-red: #A5171C;
+    --color-white: #fff;
+    --color-black: #181818;
+    --color-lightgrey: #f9f9f9;
+}
+
+/* Base Styles */
+body {
+    font-size: var(--body-size);
+    font-weight: 300;
+    font-family: var(--font-family-base);
+    min-width: 320px;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    line-height: var(--line-height-heading);
+    color: var(--color-black);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+h1 {
+    font-size: var(--h1-size);
+    color: var(--color-white);
+}
+
+h2 { font-size: var(--h2-size); }
+h3 { 
+    font-size: var(--h3-size);
+    font-weight: 500;
+}
+h4 { font-size: var(--h4-size); }
+h5 { font-size: var(--h5-size); }
+h6 { font-size: var(--h6-size); }
+
+/* Link Styles */
+a {
+    text-decoration: none;
+}
+
+
+/* Text Elements */
+strong {
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+p {
+    line-height: var(--line-height-base);
+    margin-bottom: var(--space-md);
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    margin-bottom: var(--space-md);
+    line-height: var(--line-height-base);
+}
+
+li {
+    margin-left: 1.5rem;
+}
+
+/* Buttons */
+button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    padding: 1.5rem 6rem;
+    border-radius: 1000px;
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #6d0f12;
+}
+
+/* tablet Breakpoint (425px) */
+@media (min-width: 425px) {
+    :root {
+        --h1-size: 3rem;    /* 36px */
+        --h2-size: 2rem;       /* 32px */
+        --h3-size: 1.75rem;    /* 28px */
+        --h4-size: 1.5rem;     /* 24px */
+        --h5-size: 1.25rem;    /* 20px */
+        --h6-size: 1.125rem;   /* 18px */
+        --space-xl: 2.5rem;    /* 40px */
+        --space-xxl: 5rem;     /* 80px */
+    }
+}
+
+/* desktop Breakpoint (768px) */
+@media (min-width: 768px) {
+     
+    :root {
+        --h1-size: 6rem;       /* 48px */
+        --h2-size: 2.5rem;     /* 40px */
+        --h3-size: 2rem;       /* 32px */
+        --h4-size: 1.75rem;    /* 28px */
+        --h5-size: 1.5rem;     /* 24px */
+        --h6-size: 1.25rem;    /* 20px */
+        --body-size: 1.125rem; /* 18px */
+        --space-xl: 3rem;      /* 48px */
+        --space-xxl: 6rem;     /* 96px */
+        --section-padding: 6rem 3rem;
+    }
+    h1 {
+      letter-spacing: -0.2rem;
+    }
+}
